@@ -36,7 +36,7 @@
     .trust-bar { background: #f8f5ef; }
   </style>
 </head>
-<body class="bg-[#f8f5ef] text-[#1f2a24]">
+<body class="bg-[#f8f5ef] text-[#1f2a24] overflow-x-hidden">
   
   <!-- TOP BAR -->
   <div class="bg-[#0f3d2e] text-white text-sm py-2">
@@ -86,30 +86,30 @@
     </div>
     
     <div class="relative z-10 max-w-4xl px-6 text-center text-white">
-      <div class="inline-flex items-center bg-white/90 text-[#0f3d2e] text-xs font-semibold tracking-[1.5px] px-4 h-7 rounded-full mb-5">
+      <div class="inline-flex items-center bg-white/90 text-[#0f3d2e] text-[10px] sm:text-xs font-semibold tracking-[1px] sm:tracking-[1.5px] px-3 sm:px-4 h-6 sm:h-7 rounded-full mb-4 sm:mb-5">
         5,0 • 4 Bewertungen
       </div>
       
-      <h1 class="text-6xl md:text-7xl heading-serif tracking-[-3.8px] leading-[0.92]">
-        Außergewöhnliche<br>Pool-Ferienwohnung<br>im Herzen von Rheinau
+      <h1 class="text-[2.65rem] leading-[1.05] sm:text-5xl md:text-6xl lg:text-7xl heading-serif tracking-[-1.5px] sm:tracking-[-2px] md:tracking-[-3.2px]">
+        Außergewöhnliche Pool-Ferienwohnung<br class="hidden sm:block"> im Herzen von Rheinau
       </h1>
       
-      <p class="mt-5 text-xl text-white/90 max-w-md mx-auto">
+      <p class="mt-4 sm:mt-5 text-lg sm:text-xl text-white/90 max-w-md mx-auto px-2">
         Historischer Brauereigasthof • Privater Pool • 4 Schlafzimmer • Direkt beim Gastgeber buchen
       </p>
 
-      <div class="flex flex-col sm:flex-row gap-4 justify-center mt-9">
+      <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-8 px-2">
         <button onclick="document.getElementById('book').scrollIntoView({behavior:'smooth'})" 
-                class="bg-white text-[#0f3d2e] px-9 h-14 rounded-full font-semibold text-base hover:bg-[#f8f5ef] transition">
+                class="bg-white text-[#0f3d2e] px-6 sm:px-9 h-12 sm:h-14 rounded-full font-semibold text-sm sm:text-base hover:bg-[#f8f5ef] transition w-full sm:w-auto">
           Verfügbarkeit prüfen &amp; direkt buchen
         </button>
         <button onclick="document.getElementById('galerie').scrollIntoView({behavior:'smooth'})" 
-                class="border border-white/70 hover:bg-white/10 text-white px-8 h-14 rounded-full font-medium text-base transition">
+                class="border border-white/70 hover:bg-white/10 text-white px-6 sm:px-8 h-12 sm:h-14 rounded-full font-medium text-sm sm:text-base transition w-full sm:w-auto">
           Fotos ansehen
         </button>
       </div>
 
-      <div class="mt-8 text-xs tracking-widest text-white/70">31.08. – 05.09.2026 • 5 Nächte • ab 874 € auf Airbnb • Günstiger direkt</div>
+      <div class="mt-6 sm:mt-8 text-[10px] sm:text-xs tracking-widest text-white/70 px-2">31.08. – 05.09.2026 • 5 Nächte • ab 874 € auf Airbnb • Günstiger direkt</div>
     </div>
   </header>
 
@@ -243,7 +243,7 @@
       <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
         <div>
           <div class="text-xs font-semibold tracking-[2px] text-[#b38a4f]">TRANSPARENTER PREISVERGLEICH</div>
-          <h3 class="text-3xl font-semibold text-[#0f3d2e] mt-1">Wählen Sie Ihre Daten – sehen Sie den Unterschied</h3>
+          <h3 class="text-3xl font-semibold text-[#0f3d2e] mt-1">Jetzt buchen</h3>
         </div>
         <a href="https://www.airbnb.de/rooms/1576822499993214187" target="_blank" 
            class="inline-flex items-center gap-x-2 border border-[#0f3d2e] hover:bg-[#0f3d2e] hover:text-white transition px-6 h-11 rounded-full text-sm font-medium">
@@ -288,7 +288,7 @@
 
           <div class="mt-4">
             <a href="https://www.airbnb.de/rooms/1576822499993214187" target="_blank"
-               class="text-xs text-[#b38a4f] hover:underline font-medium">Direkt bei Airbnb buchen →</a>
+               class="text-xs text-[#b38a4f] hover:underline font-medium">Bei Airbnb buchen →</a>
           </div>
         </div>
 
@@ -308,8 +308,21 @@
         </div>
       </div>
 
-      <div class="mt-6 text-xs text-center text-[#6b7a72]">
-        174,80 € / Nacht auf Airbnb • ab 130 € direkt (2 Personen) • immer ca. 18 % günstiger direkt
+      <!-- Direkt buchen CTA -->
+      <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+        <button onclick="bookDirectFromCalculator()"
+                class="bg-[#0f3d2e] hover:bg-black transition text-white px-10 h-14 rounded-2xl font-semibold text-base">
+          Direkt buchen
+        </button>
+        
+        <a href="https://www.airbnb.de/rooms/1576822499993214187" target="_blank"
+           class="inline-flex items-center justify-center border border-[#0f3d2e] hover:bg-[#0f3d2e] hover:text-white transition px-6 h-14 rounded-2xl text-sm font-medium">
+          Bei Airbnb buchen
+        </a>
+      </div>
+      
+      <div class="mt-3 text-[10px] text-center text-[#6b7a72]">
+        Ihre Datenauswahl wird in die Anfrage übernommen
       </div>
     </div>
   </div>
@@ -560,6 +573,21 @@
       const modal = document.getElementById('full-gallery-modal');
       modal.classList.remove('block');
       modal.classList.add('hidden');
+    }
+
+    // Direkt buchen from the price calculator
+    function bookDirectFromCalculator() {
+      const checkin = document.getElementById('calc-checkin').value;
+      const checkout = document.getElementById('calc-checkout').value;
+      const guests = document.getElementById('calc-guests').value;
+
+      const datesText = (checkin && checkout) 
+        ? `${checkin} bis ${checkout}` 
+        : "gewünschte Daten";
+
+      const text = `Hallo Andy,%0A%0Aich möchte gerne direkt buchen.%0A%0AZeitraum: ${datesText}%0AGäste: ${guests}%0A%0AVielen Dank!`;
+
+      window.open(`https://wa.me/491722391061?text=${text}`, '_blank');
     }
 
     // Interactive Price Calculator - Clean 18% savings logic
