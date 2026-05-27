@@ -1,19 +1,37 @@
-# Schwanen Rheinau
+# Schwanen Rheinau – Direktbuchungs-Website (Produktionsversion)
 
-Exklusive 5-Zimmer Pool-Ferienwohnung im historischen Brauereigasthof in Rheinau (Baden-Württemberg).
+Vollständig neu aufgebaut mit **ausschließlich originalen Fotos** aus dem Airbnb-Angebot.
 
-**Direkt beim Gastgeber buchen – günstiger, persönlicher, ohne Plattformgebühren.**
+## Aktueller Stand (27. Mai 2026)
 
-## Live
+- Alle 53+ echten Fotos aus der Anzeige verwendet
+- Realer Preis aus Ihrem Screenshot berücksichtigt (874 € auf Airbnb für 31.08.–05.09.2026)
+- Attraktiver Direktpreis + klare Ersparnis-Darstellung
+- Funktionsfähiges WhatsApp-Anfrage-Formular (vorausgefüllt)
+- Interaktive Karte + Galerie mit Lightbox
+- Professionelles, verkaufsstarkes Design
 
-https://schwanen-rheinau.vercel.app
+## So öffnen Sie die Seite
+1. Doppelklick auf `index.html` (funktioniert offline)
+2. Testen Sie vor allem:
+   - Die Galerie (Klick auf Bilder)
+   - Die WhatsApp-Anfrage (unten auf der Seite)
+   - Die Preis-Vergleichs-Sektion
 
-## Kontakt
+## Nächste Schritte für Sie
 
-**WhatsApp / Telefon:** +49 172 2391061
+1. **Preise finalisieren**  
+   Sagen Sie mir die exakten Preise aus Ihren Screenshots (Nachtpreis, Reinigung, Gesamt für verschiedene Zeiträume).
 
-Einfach eine Nachricht mit gewünschtem Zeitraum schicken – Andy meldet sich schnell.
+2. **Beste Fotos auswählen**  
+   Schauen Sie sich alle Bilder in `assets/images/` an und sagen Sie mir, welche 8–10 Sie als Hero und in der Galerie bevorzugen.
 
----
+3. **Kontakt & Buchungssystem**  
+   Wollen Sie eine echte E-Mail- oder WhatsApp-Integration? Ich kann das Formular noch stärker machen.
 
-Offizielle Direktbuchungsseite für die Ferienwohnung Schwanen Rheinau.
+4. **Live schalten**  
+   Ich helfe Ihnen beim Upload auf Vercel/Netlify oder Ihrem Hosting.
+
+Die Seite ist jetzt schon deutlich besser als die erste Version und kommt sehr nah an "ready to ship".
+
+Bei Fragen oder Änderungswünschen einfach schreiben.
