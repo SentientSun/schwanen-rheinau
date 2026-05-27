@@ -1,1 +1,15 @@
-$(cat /tmp/.gitignore)
+# Development / private files
+Info for grok build/
+*.backup*
+*.bak
+.DS_Store
+Thumbs.db
+
+# Node / Vercel local
+node_modules/
+.vercel/
+.env
+.env.local
+
+# OS files
+*.log
